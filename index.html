@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monkey Match 🐒</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">🐒 MonkeyMatch</div>
+      <div class="nav-links">
+        <button id="matchesBtn">💚 Matches</button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="app">
+        <div class="title">
+          <h1>Find your monkey 🐒</h1>
+          <p>Swipe right if they're your type.</p>
+        </div>
+
+        <div class="card-container" id="cardContainer">
+          <div class="monkey-card">
+            <img
+              src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=800&q=80"
+            />
+
+            <div class="card-info">
+              <h2>George <span>🟢</span></h2>
+              <p>🦍 24 years old · 3 km away</p>
+              <p class="bio">Bananas, sunshine & climbing trees 🌴🍌</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="action-btn nope" id="nopeBtn">✕</button>
+          <button class="action-btn super" id="superBtn">⭐</button>
+          <button class="action-btn like" id="likeBtn">♥</button>
+        </div>
+
+        <p class="hint">
+          ← Nope &nbsp;&nbsp;&nbsp; Super Like &nbsp;&nbsp;&nbsp; Like →
+        </p>
+      </div>
+    </main>
+
+    <div class="match-popup" id="matchPopup">
+      <div class="popup-content">
+        <div class="confetti">🎉 🐒 🎉</div>
+        <h2>It's a Match!</h2>
+        <p>
+          You and <strong id="matchedMonkey">George</strong> liked each other.
+        </p>
+        <button id="keepSwiping">Keep Swiping</button>
+      </div>
+    </div>
+
+    <div class="matches-panel" id="matchesPanel">
+      <div class="panel-content">
+        <div class="panel-header">
+          <h2>Your Matches 💚</h2>
+          <button id="closeMatches">✕</button>
+        </div>
+
+        <div id="matchList">
+          <p class="empty">No matches yet... keep swiping! 🐒</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
